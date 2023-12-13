@@ -9,7 +9,10 @@
         <% if user_signed_in? %>
           <% if current_user.user? %>
             <li class="nav-item">
-              <%= link_to "Registrar receita", new_recipe_path,class: "nav-link" %>
+              <%= link_to "Registrar receita", new_recipe_path,class: "nav-link" %>              
+            </li>
+            <li>
+              <%= link_to "Registrar lista de receitas", new_recipe_list_path, class: "nav-link" %>
             </li>
           <% else %>
             <li class="nav-item">
