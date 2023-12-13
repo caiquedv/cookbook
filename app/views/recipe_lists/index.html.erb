@@ -1,0 +1,13 @@
+<h1>Listas de Receitas</h1>
+
+<section id="recipe_list">
+  <div class="d-flex flex-row">
+    <% @recipe_lists.each do |recipe_list| %>
+      <div class="card my-5 mx-3 border-0 shadow-lg">
+        <div class="card-header">
+          <h3> <%= link_to recipe_list.name, recipe_list_path(recipe_list) %></h3>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
